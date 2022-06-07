@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiTemplate.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiTemplate"
+    xmlns:pages="clr-namespace:MauiTemplate.Pages">
+
+    <FlyoutItem Title="Cats"
+                Icon="dotnet_bot.svg">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:FrontPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Dogs"
+                Icon="dotnet_bot.svg">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:MainTabPage}" />
+        </Tab>
+    </FlyoutItem>
+</Shell>
